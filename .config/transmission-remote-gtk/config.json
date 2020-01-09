@@ -1,0 +1,185 @@
+{
+  "profiles" : [
+    {
+      "profile-name" : "TVBox",
+      "hostname" : "tvbox",
+      "port" : 9091,
+      "rpc-url-path" : "/transmission/rpc",
+      "username" : "tv",
+      "password" : "tv",
+      "auto-connect" : true,
+      "ssl" : false,
+      "ssl-validate" : false,
+      "timeout" : 40,
+      "retries" : 3,
+      "update-active-only" : false,
+      "activeonly-fullsync-enabled" : false,
+      "activeonly-fullsync-every" : 2,
+      "update-interval" : 3,
+      "min-update-interval" : 3,
+      "session-update-interval" : 60,
+      "last-add-destination" : "/home/tv/Downloads",
+      "exec-commands" : [
+      ],
+      "destinations" : [
+      ]
+    }
+  ],
+  "profile-id" : 0,
+  "tree-views" : {
+    "TrgTorrentTreeView" : {
+      "sort-col" : 39,
+      "sort-type" : 0
+    },
+    "TrgTrackersTreeView" : {
+      "sort-col" : -2,
+      "sort-type" : 0,
+      "widths" : [
+        145,
+        224,
+        154,
+        218,
+        225,
+        227,
+        199,
+        204
+      ],
+      "columns" : [
+        "tier",
+        "announce-url",
+        "last-announce-peer-count",
+        "seeder-count",
+        "leecher-count",
+        "last-announce-time",
+        "last-result",
+        "scrape-url"
+      ]
+    },
+    "TrgFilesTreeView" : {
+      "sort-col" : -2,
+      "sort-type" : 0,
+      "widths" : [
+        306,
+        297,
+        332,
+        340,
+        321
+      ],
+      "columns" : [
+        "name",
+        "size",
+        "progress",
+        "wanted",
+        "priority"
+      ]
+    },
+    "TrgPeersTreeView" : {
+      "sort-col" : -2,
+      "sort-type" : 0,
+      "widths" : [
+        176,
+        176,
+        203,
+        240,
+        216,
+        211,
+        182,
+        192
+      ],
+      "columns" : [
+        "ip",
+        "host",
+        "country",
+        "down-speed",
+        "up-speed",
+        "progress",
+        "flags",
+        "client"
+      ]
+    },
+    "TrgFilesTreeView-dialog" : {
+      "sort-col" : -2,
+      "sort-type" : 0,
+      "widths" : [
+        120,
+        111,
+        146,
+        154,
+        137
+      ],
+      "columns" : [
+        "name",
+        "size",
+        "progress",
+        "wanted",
+        "priority"
+      ]
+    },
+    "TrgPeersTreeView-dialog" : {
+      "sort-col" : -2,
+      "sort-type" : 0,
+      "widths" : [
+        60,
+        60,
+        87,
+        124,
+        100,
+        95,
+        66,
+        76
+      ],
+      "columns" : [
+        "ip",
+        "host",
+        "country",
+        "down-speed",
+        "up-speed",
+        "progress",
+        "flags",
+        "client"
+      ]
+    },
+    "TrgTrackersTreeView-dialog" : {
+      "sort-col" : -2,
+      "sort-type" : 0,
+      "widths" : [
+        51,
+        234,
+        60,
+        124,
+        131,
+        159,
+        218,
+        212
+      ],
+      "columns" : [
+        "tier",
+        "announce-url",
+        "last-announce-peer-count",
+        "seeder-count",
+        "leecher-count",
+        "last-announce-time",
+        "last-result",
+        "scrape-url"
+      ]
+    }
+  },
+  "start-paused" : false,
+  "add-options-dialog" : true,
+  "delete-local-torrent" : false,
+  "show-state-selector" : true,
+  "filter-dirs" : true,
+  "filter-trackers" : true,
+  "directories-first" : true,
+  "show-notebook" : false,
+  "system-tray" : false,
+  "system-tray-minimise" : false,
+  "add-notify" : false,
+  "complete-notify" : false,
+  "window-height" : 880,
+  "window-width" : 1600,
+  "notebook-paned-pos" : 300,
+  "states-paned-pos" : 240,
+  "dialog-width" : 700,
+  "dialog-height" : 600
+}
