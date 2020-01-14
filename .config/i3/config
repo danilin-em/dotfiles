@@ -10,23 +10,62 @@ new_window 1pixel
 smart_borders on
 
 # Floating
-for_window [class="Tor Browser"] floating enable
-for_window [class="java-lang-Thread"] floating enable
-for_window [class="pye-menu"] floating enable
-for_window [title="Picture in picture"] floating enable
-for_window [class="Blueman-manager"] floating enable
-for_window [class="Galculator"] floating enable
-for_window [class="Tilda"] floating enable
-for_window [class="Plank"] floating enable
-for_window [title="Gnome-Pie"] floating enable
+for_window [class="Tor Browser"] floating enable border pixel 1
+for_window [class="java-lang-Thread"] floating enable border pixel 1
+for_window [class="pye-menu"] floating enable border pixel 1
+for_window [title="Picture in picture"] floating enable border pixel 1
+for_window [class="Blueman-manager"] floating enable border pixel 1
+for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="Tilda"] floating enable border pixel 1
+for_window [class="Plank"] floating enable border pixel 1
+for_window [title="Gnome-Pie"] floating enable border pixel 1
+#for_window [title="alsamixer"] floating enable border pixel 1
+#for_window [class="calamares"] floating enable border normal
+for_window [class="Clipgrab"] floating enable border pixel 1
+for_window [title="File Transfer*"] floating enable border pixel 1
+for_window [class="fpakman"] floating enable border pixel 1
+for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="GParted"] floating enable border normal
+for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [class="Lightdm-settings"] floating enable border pixel 1
+for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Manjaro-hello"] floating enable border pixel 1
+for_window [class="Manjaro Settings Manager"] floating enable border normal
+for_window [title="MuseScore: Play Panel"] floating enable
+for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Oblogout"] fullscreen enable
+for_window [class="octopi"] floating enable border pixel 1
+for_window [title="About Pale Moon"] floating enable border pixel 1
+#for_window [class="Pamac-manager"] floating enable border pixel 1
+for_window [class="Pavucontrol"] floating enable border pixel 1
+for_window [class="qt5ct"] floating enable sticky enable border normal
+for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+for_window [class="Simple-scan"] floating enable border normal
+for_window [class="(?i)System-config-printer.py"] floating enable border normal
+#for_window [class="Skype"] floating enable border normal
+for_window [class="Timeset-gui"] floating enable border normal
+for_window [class="(?i)virtualbox"] floating enable border normal
+for_window [class="Xfburn"] floating enable border pixel 1
+
 
 # Startup
-#exec_always --no-startup-id ~/.config/i3/scripts/launch.sh picom -b
-exec_always --no-startup-id numlockx on
+# exec --no-startup-id nitrogen --restore; sleep 1; compton -b
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
+exec --no-startup-id nm-applet
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id pamac-tray
+exec --no-startup-id clipit
+exec --no-startup-id blueman-applet
+# exec --no-startup-id start_conky_maia
+# exec --no-startup-id xautolock -time 10 -locker blurlock
+# exec --no-startup-id start_conky_green
+# exec_always --no-startup-id numlockx on
 exec_always --no-startup-id setxkbmap -layout us,ru -option grp:win_space_toggle
 exec_always --no-startup-id feh --bg-fill ~/wallpaper.jpg
-exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg) &
-exec --no-startup-id xfce4-power-manager
+exec_always --no-startup-id ff-theme-util
+exec_always --no-startup-id fix_xcursor
+# exec_always --no-startup-id ~/.config/i3/scripts/launch.sh picom -b
+# exec_always --no-startup-id sbxkb
 
 # Autostart
 exec_always --no-startup-id ~/.config/i3/scripts/launch.sh tilda
