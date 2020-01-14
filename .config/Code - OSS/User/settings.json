@@ -1,0 +1,17 @@
+{
+    "workbench.colorTheme": "Visual Studio Dark",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.openEditors.visible": 0,
+    "editor.suggestSelection": "first",
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "editor.minimap.enabled": false,
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+    "editor.detectIndentation": true,
+    "editor.rulers": [
+        75,        
+        80
+    ]
+}
