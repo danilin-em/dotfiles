@@ -67,6 +67,7 @@ run_once({
     -- Aps
     "megasync",
     "flameshot",
+    "blueman-applet",
     "telegram-desktop",
 })
 
@@ -93,7 +94,7 @@ local editor       = os.getenv("EDITOR") or "vim"
 local gui_editor   = os.getenv("GUI_EDITOR") or "subl"
 local browser      = os.getenv("BROWSER") or "firefox"
 local scrlocker    = "dm-tool lock"
-local enable_window_titlebar = false
+local enable_window_titlebar = true
 
 awful.util.terminal = terminal
 awful.util.tagnames = { "1", "2", "3", "4", "5" }
@@ -299,6 +300,13 @@ globalkeys = my_table.join(
 
 -- {{{ Client Keys group    
 clientkeys = my_table.join(
+    awful.key({ modkey }, "Tab",
+        function (c)
+            if client.focus then
+                awful.titlebar.toggle(c)
+            end
+        end,
+        {description = "titlebar toggle", group = "client"}),
     awful.key({ altkey }, "Tab",
         function ()
             if cycle_prev then
@@ -490,6 +498,7 @@ if enable_window_titlebar then
             },
             layout = wibox.layout.align.horizontal
         }
+        awful.titlebar.hide(c)
     end)
 end
 
@@ -503,6 +512,14 @@ client.connect_signal("focus", function(c)
 end)
 client.connect_signal("unfocus", function(c) 
     c.border_color = beautiful.border_normal
+end)
+
+client.connect_signal("property::floating", function (c)
+    if c.floating then
+        awful.titlebar.show(c)
+    else
+        awful.titlebar.hide(c)
+    end
 end)
 
 -- possible workaround for tag preservation when switching back to default screen:
