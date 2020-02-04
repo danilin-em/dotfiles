@@ -433,6 +433,15 @@ awful.rules.rules = {
 
     { rule = { class = "Gimp", role = "gimp-image-window" },
           properties = { maximized = true } },
+    -- floating
+    { rule_any = { 
+            class = { 
+                "Blueman-manager" 
+            }, 
+            name = { 
+                "Picture in picture" 
+            } 
+        }, properties = { floating = true }},
 }
 -- }}}
 
