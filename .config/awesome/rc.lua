@@ -436,12 +436,19 @@ awful.rules.rules = {
     -- floating
     { rule_any = { 
             class = { 
-                "Blueman-manager" 
+                "Blueman-manager",
             }, 
             name = { 
-                "Picture in picture" 
+                "Picture in picture",
+                "Execute File",
+                "Open Folder",
             } 
-        }, properties = { floating = true }},
+        }, 
+        properties = { floating = true },
+        callback = function (c)
+            awful.placement.centered(c,nil)
+        end
+    },
 }
 -- }}}
 
