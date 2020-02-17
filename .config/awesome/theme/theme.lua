@@ -287,6 +287,11 @@ local net = lain.widget.net {
 
 -- Keyboard map indicator and switcher
 mykeyboardlayout = awful.widget.keyboardlayout()
+mykeyboardlayoutct = wibox.container.constraint(
+    wibox.container.background(mykeyboardlayout, theme.bg_focus),
+    'min',
+    23
+)
 
 -- Separators
 local spr     = wibox.widget.textbox(' ')
@@ -343,7 +348,7 @@ function theme.at_screen_connect(s)
             wibox.widget.systray(),
             spr,
             --arrl_ld,
-            wibox.container.background(mykeyboardlayout, theme.bg_focus),
+            mykeyboardlayoutct,
             --arrl_dl,
             --wibox.container.background(mpdicon, theme.bg_focus),
             --wibox.container.background(theme.mpd.widget, theme.bg_focus),
