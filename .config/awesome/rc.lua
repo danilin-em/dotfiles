@@ -59,6 +59,7 @@ end
 
 run_once({
     -- System
+    "picom",
     "urxvtd",
     "unclutter -root",
     "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1",
@@ -325,7 +326,7 @@ clientkeys = my_table.join(
         {description = "toggle fullscreen", group = "client"}),
     awful.key({ modkey, "Shift" }, "q", function (c) c:kill() end,
         {description = "close", group = "client"}),
-    awful.key({ modkey, "Shift" }, "space",  awful.client.floating.toggle,
+    awful.key({ modkey, "Shift" }, "space", awful.client.floating.toggle,
         {description = "toggle floating", group = "client"})
 )
 --}}}
