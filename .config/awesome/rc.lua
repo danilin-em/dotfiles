@@ -439,6 +439,7 @@ awful.rules.rules = {
             class = { 
                 "Blueman-manager",
                 "emustudio-main-Main",
+                "gcr-prompter", "Gcr-prompter",
             }, 
             name = { 
                 "Picture in picture",
