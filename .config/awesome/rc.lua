@@ -65,6 +65,7 @@ run_once({
     "/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1",
     "setxkbmap -layout us,ru -option grp:win_space_toggle",
     "fix_xcursor",
+    "numlockx on",
     -- Aps
     "megasync",
     "flameshot",
