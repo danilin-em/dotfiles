@@ -229,6 +229,7 @@ awful.screen.connect_for_each_screen(function(s) beautiful.at_screen_connect(s) 
 
 -- {{{ Mouse bindings
 root.buttons(my_table.join(
+    awful.button({ }, 1, function () awful.util.mymainmenu:hide() end),
     awful.button({ }, 3, function () awful.util.mymainmenu:toggle() end),
     awful.button({ }, 4, awful.tag.viewnext),
     awful.button({ }, 5, awful.tag.viewprev)
@@ -467,6 +468,7 @@ awful.rules.rules = {
             "jetbrains-pycharm-ce",
             "jetbrains-pycharm",
             "jetbrains-rubymine",
+            "jetbrains-studio",
         }, },
         properties = { 
             floating = true, 
