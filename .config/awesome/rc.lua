@@ -452,6 +452,27 @@ awful.rules.rules = {
             awful.placement.centered(c,nil)
         end
     },
+    -- JetBrains: Sub menu floating
+    { rule_any = {
+        instance = { 
+            "jetbrains-webstorm", 
+            "jetbrains-goland", 
+            "jetbrains-idea",
+            "jetbrains-phpstorm",
+            "jetbrains-pycharm-ce",
+            "jetbrains-pycharm",
+            "jetbrains-rubymine",
+        }, },
+        properties = { 
+            floating = true, 
+            titlebars_enabled = false,
+        },
+        callback = function (c)
+            awful.titlebar.hide(c)
+            awful.placement.next_to_mouse(c)
+            awful.placement.no_offscreen(c, {honor_workarea = true, margins = 5})
+        end
+    },
     -- pcmanfm
     { rule = { class = "pcmanfm", name = "Copying files" }, 
         properties = { floating = true },
