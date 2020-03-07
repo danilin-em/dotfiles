@@ -438,6 +438,7 @@ awful.rules.rules = {
     { rule_any = { 
             class = { 
                 "Blueman-manager",
+                "emustudio-main-Main",
             }, 
             name = { 
                 "Picture in picture",
