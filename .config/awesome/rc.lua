@@ -424,9 +424,13 @@ awful.rules.rules = {
      }
     },
 
-    -- Titlebars
+    -- Dialogs
     { rule_any = { type = { "dialog", "normal" } },
-      properties = { titlebars_enabled = true } },
+        properties = { titlebars_enabled = true },
+        callback = function (c)
+            awful.placement.centered(c,nil)
+        end
+    },
 
     -- Set Firefox to always map on the first tag on screen 1.
     { rule = { class = "Firefox" },
