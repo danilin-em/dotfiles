@@ -452,6 +452,7 @@ awful.rules.rules = {
             awful.placement.centered(c,nil)
         end
     },
+    -- pcmanfm
     { rule = { class = "pcmanfm", name = "Copying files" }, 
         properties = { floating = true },
         callback = function (c)
