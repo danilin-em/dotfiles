@@ -458,6 +458,20 @@ awful.rules.rules = {
             awful.placement.centered(c,nil)
         end
     },
+    -- Some Loaders...
+    { rule_any = { class = {
+            "sun-awt-X11-XWindowPeer",
+            "java-lang-Thread"
+        }, },
+        properties = { 
+            floating = true, 
+            titlebars_enabled = false,
+        },
+        callback = function (c)
+            awful.titlebar.hide(c)
+            awful.placement.centered(c,nil)
+        end
+    },
     -- JetBrains: Sub menu floating
     { rule_any = {
         instance = { 
