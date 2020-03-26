@@ -28,6 +28,23 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ```
 
+### Appearance
+
+- [Mojave GTK Theme](https://github.com/vinceliuice/Mojave-gtk-theme)
+
+```sh
+
+wget https://github.com/vinceliuice/Mojave-gtk-theme/archive/master.zip
+unzip master.zip
+rm master.zip
+cd Mojave-gtk-theme-master
+./install.sh -c dark -o standard -a standard -s small
+
+```
+
+- [Papirus icon theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
+
+
 ### AwesomeWM
 
 ```sh
