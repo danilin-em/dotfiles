@@ -468,6 +468,7 @@ awful.rules.rules = {
             "jetbrains-pycharm-ce",
             "jetbrains-pycharm",
             "jetbrains-rubymine",
+            'jetbrains-studio',
         }, },
         properties = { 
             floating = true, 
