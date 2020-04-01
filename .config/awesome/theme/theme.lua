@@ -11,6 +11,8 @@ local awful = require("awful")
 local wibox = require("wibox")
 local dpi   = require("beautiful.xresources").apply_dpi
 
+local brightness = require("brightness")
+
 local os = os
 local my_table = awful.util.table or gears.table -- 4.{0,1} compatibility
 
@@ -293,6 +295,8 @@ mykeyboardlayoutct = wibox.container.constraint(
     23
 )
 
+brightness_ctrl = brightness({})
+
 -- Separators
 local spr     = wibox.widget.textbox(' ')
 local arrl_dl = separators.arrow_left(theme.bg_focus, "alpha")
@@ -370,6 +374,7 @@ function theme.at_screen_connect(s)
             --wibox.container.background(fsicon, theme.bg_focus),
             --wibox.container.background(theme.fs.widget, theme.bg_focus),
             --arrl_dl,
+            brightness_ctrl.widget,
             baticon,
             bat.widget,
             --arrl_ld,
