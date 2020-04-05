@@ -8,3 +8,5 @@ export GPG_TTY=$(tty)
 # Set up Node Version Manager
 export NVM_DIR="$HOME/.nvm"                      # You can change this if you want.
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # Load NVM
+
+export PATH="$HOME/.cargo/bin:$PATH"
