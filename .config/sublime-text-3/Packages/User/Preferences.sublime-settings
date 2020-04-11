@@ -1,4 +1,7 @@
 {
-	"theme": "Adaptive.sublime-theme",
 	"draw_white_space": "all",
+	"font_size": 9,
+	"tab_size": 4,
+	"theme": "Adaptive.sublime-theme",
+	"translate_tabs_to_spaces": true
 }
