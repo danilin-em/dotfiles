@@ -23,8 +23,6 @@ mkdir -p ~/Projects
 
 ```
 
-- rofi
-
 - zsh
 
 ```sh
@@ -32,6 +30,21 @@ mkdir -p ~/Projects
 # Oh Yy ZSH
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+
+```
+
+- docker
+
+- meld
+
+- Sublime Text 3
+
+#### Global Configs
+
+```sh
+
+# intel_backlight
+sudo install ~/.root/etc/X11/xorg.conf /etc/X11/xorg.conf
 
 ```
 
