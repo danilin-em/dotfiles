@@ -10,4 +10,4 @@ export NVM_DIR="$HOME/.nvm"                      # You can change this if you wa
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # Load NVM
 
 export PATH="$HOME/.cargo/bin:$PATH"
-export GTK2_RC_FILES=/home/max/.gtkrc-2.0
+export GTK2_RC_FILES="$HOME/.gtkrc-2.0"
