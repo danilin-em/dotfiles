@@ -16,6 +16,13 @@ config reset --hard origin/master
 
 ### System
 
+```sh
+# Paths
+
+mkdir -p ~/Projects
+
+```
+
 - rofi
 
 - zsh
@@ -38,17 +45,26 @@ wget https://github.com/vinceliuice/Mojave-gtk-theme/archive/master.zip
 unzip master.zip
 rm master.zip
 cd Mojave-gtk-theme-master
-./install.sh -c dark -o standard -a standard -s small
+./install.sh -c dark -o standard -a standard
 
 ```
 
 - [Papirus icon theme](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme)
 
+- [Font: JetBrains Mono](https://www.jetbrains.com/lp/mono/#how-to-install)
+
+- [Font: Ubuntu](https://design.ubuntu.com/font/)
 
 ### AwesomeWM
 
 ```sh
 
-git clone https://github.com/lcpz/lain.git ~/.config/awesome/lain
+mkdir ~/Projects
+
+git clone git@github.com:danilin-em/awml.git ~/Projects/awml
+
+git clone https://github.com/lcpz/lain.git ~/Projects/awml/lain
+
+ln -s ~/Projects/awml ~/.config/awesome
 
 ```
