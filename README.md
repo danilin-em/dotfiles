@@ -23,7 +23,7 @@ mkdir -p ~/Projects
 
 ```
 
-- zsh
+- [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
 ```sh
 
@@ -33,11 +33,11 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 
 ```
 
-- docker
+- [docker](https://docs.docker.com/engine/install/)
 
-- meld
+- [meld](https://meldmerge.org/)
 
-- Sublime Text 3
+- [Sublime Text 3](https://www.sublimetext.com/3)
 
 #### Global Configs
 
