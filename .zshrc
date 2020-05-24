@@ -144,39 +144,15 @@ function init_venv
 }
 
 # Aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias cfg='config'
 
 alias venv="init_venv"
 alias proj="init_project"
 
-# Set up Node Version Manager
-export NVM_DIR="$HOME/.nvm"                      # You can change this if you want.
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # Load NVM
-#export PATH=$PATH:$HOME/.nvm/versions/node/v13.6.0/bin
-
-# Android
-export ANDROID_SDK_ROOT=$HOME/Android/Sdk
-export ANDROID_HOME=$HOME/Android/Sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
 # Composer
 export PATH=$PATH:$HOME/.config/composer/vendor/bin
 
-# Symfony
-export PATH="$HOME/.symfony/bin:$PATH"
-
-# yarn
-export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"
-
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
-
-# Tabtab
-[[ -f ~/.config/tabtab/__tabtab.zsh ]] && . ~/.config/tabtab/__tabtab.zsh || true
