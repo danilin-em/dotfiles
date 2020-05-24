@@ -147,6 +147,7 @@ function init_venv
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias cfg='config'
 
 alias venv="init_venv"
 alias proj="init_project"
