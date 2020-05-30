@@ -46,6 +46,10 @@ git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-m
 # intel_backlight
 sudo install ~/.root/etc/X11/xorg.conf /etc/X11/xorg.conf
 
+# Anonymizing overlay network
+sudo install ~/.root/lib/systemd/system/tor.service /lib/systemd/system/tor.service
+systemctl daemon-reload
+
 ```
 
 ### Appearance
