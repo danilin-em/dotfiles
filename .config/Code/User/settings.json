@@ -1,4 +1,8 @@
 {
+    "window.titleBarStyle": "custom",
+    "window.menuBarVisibility": "visible",
+    "window.zoomLevel": -1,
+    "window.newWindowDimensions": "maximized",
     "workbench.colorTheme": "Visual Studio Dark",
     "explorer.openEditors.visible": 0,
     "editor.fontFamily": "'JetBrains Mono', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
@@ -7,20 +11,26 @@
     "editor.formatOnPaste": true,
     "editor.snippetSuggestions": "top",
     "editor.minimap.enabled": false,
-    "window.titleBarStyle": "custom",
-    "window.menuBarVisibility": "visible",
-    "window.zoomLevel": -1,
-    "window.newWindowDimensions": "maximized",
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.insertSpaces": true,
-    "editor.tabSize": 2,
     "editor.detectIndentation": true,
+    "editor.cursorStyle": "block",
     "editor.rulers": [
         75,
         80
     ],
+    "html.suggest.html5": true,
+    "html.autoClosingTags": true,
+    "html.validate.scripts": true,
+    "html.validate.styles": true,
+    "[html]": {
+        "editor.foldingStrategy": "indentation"
+    },
     "git.autofetch": true,
+    "git.confirmSync": false,
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
     "diffEditor.ignoreTrimWhitespace": false,
     "todo-tree.tree.showScanModeButton": false,
-    "todo-tree.regex.regex":"((//|--|#|<!--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])",
+    "todo-tree.regex.regex": "((//|--|#|<!--|;|/\\*|^)\\s*($TAGS)|^\\s*- \\[ \\])",
+    "git.suggestSmartCommit": false,
 }
