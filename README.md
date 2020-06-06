@@ -23,6 +23,8 @@ mkdir -p ~/Projects
 
 ```
 
+- [autorandr](https://github.com/phillipberndt/autorandr)
+
 - [zsh](https://github.com/ohmyzsh/ohmyzsh/wiki/Installing-ZSH)
 
 ```sh
