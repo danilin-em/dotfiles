@@ -25,7 +25,7 @@ mkdir -p ~/Projects
 
 sudo rmmod pcspkr
 
-sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
+echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
 
 ```
 
