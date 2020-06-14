@@ -21,6 +21,12 @@ config reset --hard origin/master
 
 mkdir -p ~/Projects
 
+# Disable BEEP
+
+sudo rmmod pcspkr
+
+sudo echo "blacklist pcspkr" > /etc/modprobe.d/nobeep.conf
+
 ```
 
 - [autorandr](https://github.com/phillipberndt/autorandr)
