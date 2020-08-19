@@ -27,6 +27,12 @@ sudo rmmod pcspkr
 
 echo "blacklist pcspkr" | sudo tee /etc/modprobe.d/nobeep.conf
 
+# WM
+
+# Set KeyMap
+
+localectl set-x11-keymap us,ru "" "" grp:win_space_toggle
+
 ```
 
 - [autorandr](https://github.com/phillipberndt/autorandr)
