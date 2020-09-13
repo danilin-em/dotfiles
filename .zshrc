@@ -156,3 +156,6 @@ export PATH=$PATH:$HOME/.config/composer/vendor/bin
 # Go
 export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
+
+eval "$(starship init zsh)"
+
